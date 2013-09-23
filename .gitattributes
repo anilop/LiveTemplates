@@ -1,0 +1,15 @@
+# See https://help.github.com/articles/dealing-with-line-endings
+# See http://timclem.wordpress.com/2012/03/01/mind-the-end-of-your-line/
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=auto
+
+# Declare files that git should normalize on commit (convert crlf => lf)
+# and on checkout they are converted to the OS's native line endings.
+*.xml     text
+
+# Declare files that git should normalize on commit (convert crlf => lf), 
+# and always convert them to CRLF on checkout.
+# Declare files that will always have CRLF line endings on checkout.
+
+# Images should be treated as binary
+# (binary is an alias for -text -diff)
